@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1220"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="CAISORA"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css"><title>CAISORA</title></head>
+<body><header><div class="logo">C</div><div><b>CAISORA</b><small>GESTION DE BOUTIQUE</small></div><span id="net">● Local</span></header><main>
+<section class="hero"><p>ESPACE DE GESTION</p><h1>Votre boutique.<br><i>En maîtrise.</i></h1><div>Une base locale sur cet iPhone. Aucune connexion à votre CAISORA Windows.</div></section>
+<section class="stats"><article>Produits<strong id="count">0</strong></article><article>Unités en stock<strong id="stock">0</strong></article></section>
+<section class="panel"><p class="eyebrow">CATALOGUE</p><h2>Produits & stock</h2><form id="form">
+<label>Nom du produit<input id="name" required placeholder="Ex. Manteau long"></label>
+<div class="grid"><label>Référence<input id="sku" placeholder="MT-001"></label><label>Prix (MAD)<input id="price" type="number" min="0" step=".01" required placeholder="899"></label></div>
+<div class="grid"><label>Couleur<input id="color" placeholder="Noir"></label><label>Taille<input id="size" placeholder="M, 38, XL…"></label></div>
+<label>Quantité en stock<input id="qty" type="number" min="0" step="1" value="0" required></label><button>+ Ajouter le produit</button></form>
+<div id="empty">Aucun produit pour le moment. Ajoutez votre première référence ci-dessus.</div><div id="list"></div></section>
+<section class="panel"><p class="eyebrow">PROTECTION DES DONNÉES</p><h2>Stockage local</h2><p>Les produits sont enregistrés dans ce navigateur. La synchronisation Windows n'est pas activée. Exportez régulièrement une sauvegarde.</p><button type="button" class="secondary" id="export">Exporter une sauvegarde JSON</button><small class="note">Prototype de départ — pas encore une version commerciale.</small></section></main><footer>CAISORA • PHASE 1</footer><script src="app.js"></script></body></html>
